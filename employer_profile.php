@@ -114,7 +114,7 @@ include('assets/include/check_job_expiration.php')
                             <h5>Representative</h5>
                             <p><?php echo $representative; ?></p>
                             <br>
-                            <h5>Company Register Number/POAE</h5>
+                            <h5>Company Register Number</h5>
                             <p><?php echo $companyregNum; ?></p>
                             <br>
                             <h5>Company Size</h5>

@@ -1,0 +1,26 @@
+.count-container{
+    display: flex;
+}
+
+.num-encoded{
+    padding: 30px 0px 10px 15px;
+    width: 350px;
+    height: 100px;
+    background: linear-gradient(to right, #ffafbd, #ffc3a0);
+}
+
+.num-employer{
+    margin-left: 10px;
+    padding: 30px 0px 10px 15px;
+    width: 290px;
+    height: 100px;
+    background: linear-gradient(to right, #4ca1af, #c4e0e5);
+}
+
+.num-offer{
+    margin-left: 10px;
+    padding: 30px 0px 10px 15px;
+    width: 290px;
+    height: 100px;
+    background: linear-gradient(to right, #ed4264, #ffedbc);
+}

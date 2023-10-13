@@ -1,0 +1,53 @@
+/* Existing CSS */
+
+
+.options,
+.options-employer {
+  display: none;
+  position: absolute;
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  background-color: white;
+  z-index: 1; /* Ensure the dropdown is on top */
+}
+
+.options li,
+.options-employer li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.options li:hover,
+.options-employer li:hover {
+  background-color: #f0f0f0;
+}
+
+/* New CSS for "applicant-select" and "options-applicant" */
+
+.applicant-select {
+  position: relative;
+}
+
+.options-applicant {
+  display: none;
+  position: absolute;
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  background-color: white;
+  z-index: 1; /* Ensure the dropdown is on top */
+}
+
+.options-applicant li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.options-applicant li:hover {
+  background-color: #f0f0f0;
+}

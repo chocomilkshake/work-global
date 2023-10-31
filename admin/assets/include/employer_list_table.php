@@ -35,8 +35,7 @@
             
                 // Add the options for View, Edit, and Activate
                 echo "<a href='employer_profile.php?employerId=" . $employerValue['id'] . "'>View</a>";
-                echo "<a href='employer_profile.php?employerAction=edit&id=" . $employerValue['id'] . "'>Edit</a>";
-                echo "<a href='employer_profile.php?employerAction=activate&id=" . $employerValue['id'] . "'>Activate</a>";
+                echo "<a href='employer_activate.php?employerId=" . $employerValue['id'] . "'>Activate</a>";
 
                 echo "</div>"; // Close the dropdown content
                 echo "</div>"; // Close the dropdown container

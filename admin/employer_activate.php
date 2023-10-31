@@ -81,10 +81,7 @@ include('assets/include/check_job_expiration.php')
         </div>
 
         <div class="container description">
-          <h5>Company Overview:</h5>
-          <p>
-            <?php echo $overview; ?>
-          </p>
+         
           </br>
           </br>
           <h5>Company Industry:</h5>
@@ -137,7 +134,7 @@ include('assets/include/check_job_expiration.php')
               <br>
             </div>
 
-            <div class="">
+            <div>
                 
             </div>
 

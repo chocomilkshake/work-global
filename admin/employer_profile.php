@@ -67,7 +67,7 @@ include('assets/include/check_job_expiration.php')
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container job-container">
         <div class="header-lower">
-          <img src="<?php echo $companyLogo; ?>" class="company-logo" alt="">
+          <img src="../<?php echo $companyLogo; ?>" class="company-logo" alt="">
           <div>
             <h3>
               <?php echo $companyName; ?>

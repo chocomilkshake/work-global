@@ -199,6 +199,11 @@
                         <input type="password" id="password" name="password" class="form-control form-control-lg" minlength="8" required />
                         <label class="form-label" for="password">Password</label>
                       </div>
+                      
+                      <div class="">
+                        
+                      </div>
+
                       <div class="button"><button type="submit">Create</button></div>
                     </form>
                     <div class="button"><button id="backOver">Back</button></div>

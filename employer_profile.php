@@ -4,9 +4,9 @@
 include('assets/process/config.php');
 
 //Id value of employer from index to get by included employer info
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $getId = $_POST['employerId'];
-}
+
+    $getId = $_GET['employerId'];
+
 //Company information from database
 include('assets/include/get_employer_info.php');
 include('assets/include/check_job_expiration.php')
@@ -51,24 +51,11 @@ include('assets/include/check_job_expiration.php')
 
 <body>
 
-    <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top header-inner-pages">
-        <div class="container d-flex align-items-center">
-            <h1 class="logo me-auto"><a href="index.php">Job Access.ph</a></h1>
-            <!-- Uncomment below if you prefer to use an image logo -->
-            <!-- <a href="index.html" class="logo me-auto"></a>-->
-
-            <nav id="navbar" class="navbar">
-                <ul>
-                    <li><a class="nav-link scrollto " href="index.php">Home</a></li>
-                    <li><a class="nav-link scrollto" href="#portfolio">Job Offer</a></li>
-                </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
-
-            </nav><!-- .navbar -->
-
-        </div>
-    </header><!-- End Header -->
+     <!-- ======= Header ======= -->
+  
+  <?php include('admin_header.php');?>
+  
+  <!-- End Header -->
 
     <main id="main">
 

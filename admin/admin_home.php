@@ -41,6 +41,7 @@ include('assets/include/get_admin_info.php');
   <link href="assets/css/upload_photo.css" rel="stylesheet">
   <link href="assets/css/full_view.css" rel="stylesheet">
   <link href="assets/css/dashboard.css" rel="stylesheet">
+  <link href="assets/css/home_table.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Arsha
@@ -109,6 +110,20 @@ include('assets/include/get_admin_info.php');
 
         </div>
       </div>
+
+      <!-- tABLE OF USERS AND EMPLOYER -->
+      <div class="table-container">
+        <!-- Table of User's -->
+        <div class="user-table">
+            <?php include('assets/include/user_table.php');?>
+        </div>
+
+        <div class="employer-table">
+            <?php include('assets/include/employer_table.php');?>
+        </div>
+
+      </div>
+
     </section>
 
   </main><!-- End #main -->

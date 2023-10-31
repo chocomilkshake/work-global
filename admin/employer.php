@@ -60,10 +60,11 @@ include('assets/process/config.php');
       <div class="container job-container">
           <?php include('assets/include/employer_list_table.php');?>
       </div>
+      <br><br><br><br><br><br><br><br><br><br>
     </section>
   </main><!-- End #main -->
 
-
+  
   <!-- ======= Footer ======= -->
   <footer id="footer">
 

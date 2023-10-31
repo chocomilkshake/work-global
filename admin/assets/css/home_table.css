@@ -1,0 +1,66 @@
+.table-container {
+    display: flex;
+}
+/*employer table*/
+.employer-table {
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 20px;
+    background-color: white;
+    width: fit-content;
+}
+
+.employer-data-table {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.employer-data-table td {
+    padding: 10px;
+    background-color: #F0FFFF;
+    border-top: 1px solid #ccc;
+}
+
+
+
+.employer-data-table th {
+    background-color: #ADD8E6;
+    padding: 10px;
+    text-align: center;
+}
+
+/*User table*/
+.user-table {
+    margin-top: 10px;
+    margin-left: 70px;
+    padding: 20px;
+    background-color: white;
+    width: fit-content;
+}
+
+.user-data-table {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.user-data-table td {
+    padding: 10px;
+    background-color: #F0FFFF;
+    border-top: 1px solid #ccc;
+}
+
+
+
+.user-data-table th {
+    background-color: #ADD8E6;
+    padding: 10px;
+    text-align: center;
+}
+
+.page_btn {
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to right, #A1A2A3, #BEC0C2);
+    color: black;
+    font-weight: 300px;
+}

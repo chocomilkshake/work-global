@@ -9,7 +9,7 @@ use PHPMailer\PHPMailer\SMTP;
 include('config.php');
 session_start();
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    if($_SESSION['authApp'] == session_id()){
+    if($_SESSION['authApp'] == session_id()){ 
     $getjobinfo = mysqli_query($con, "SELECT * FROM `job_offer` WHERE `job_id`='{$_POST['jobId']}'");
     $value = mysqli_fetch_array($getjobinfo);
     $getemployer = mysqli_query($con, "SELECT * FROM `employer_information` WHERE `id`='{$value['employer_id']}'");

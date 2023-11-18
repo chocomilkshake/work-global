@@ -10,7 +10,9 @@
 	<link href="assets/img/hero-img.png" rel="icon">
 	<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+		rel="stylesheet">
 
 	<!-- Vendor CSS Files -->
 	<link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -35,20 +37,25 @@
 		<section id="pricing" class="pricing">
 			<div class="container" data-aos="fade-up">
 				<div class="section-title">
+					<a class="back-button" href="index.php">
+						<img src="assets/img/icons8-back-80.png" class="back-img" alt="">
+					</a>
 					<div class="row">
 						<div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
 							<div class="box">
 								<img src="assets/img/21207.jpg" class="choose-logo" alt="">
 								<br><br><br><br>
 								<h4>Be an Employer</h4>
-								<button id="employerBtn" class="form-control btn btn-primary rounded submit px-3" role="button">Sign In</button>
+								<button id="employerBtn" class="form-control btn btn-primary rounded submit px-3"
+									role="button">Sign In</button>
 							</div>
 						</div>
 						<div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
 							<div class="box">
 								<img src="assets/img/5385937.jpg" class="choose-logo" alt="">
 								<h4>Be a Candidate</h4>
-								<button id="applicantBtn" class="form-control btn btn-primary rounded submit px-3" role="button">Sign In</button>
+								<button id="applicantBtn" class="form-control btn btn-primary rounded submit px-3"
+									role="button">Sign In</button>
 							</div>
 						</div>
 					</div>
@@ -63,6 +70,10 @@
 				<div class="row justify-content-center">
 					<div class="col-md-7 col-lg-5">
 						<div class="wrap">
+
+							<a class="back-button" href="login.php">
+								<img src="assets/img/icons8-back-80.png" class="back-img" alt="">
+							</a>
 							<div class="img">
 								<img src="assets/img/hero-img.png" class="logo" alt="">
 							</div>
@@ -78,12 +89,15 @@
 										<label class="form-control-placeholder" for="username">Username</label>
 									</div>
 									<div class="form-group">
-										<input id="password-field" name='password' type="password" class="form-control" required>
+										<input id="password-field" name='password' type="password" class="form-control"
+											required>
 										<label class="form-control-placeholder" for="password">Password</label>
-										<span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+										<span toggle="#password-field"
+											class="fa fa-fw fa-eye field-icon toggle-password"></span>
 									</div>
 									<div class="form-group">
-										<button type="submit" class="form-control btn btn-primary rounded submit px-3">Sign
+										<button type="submit"
+											class="form-control btn btn-primary rounded submit px-3">Sign
 											In</button>
 									</div>
 									<div class="form-group d-md-flex">
@@ -95,7 +109,8 @@
 										</div>
 									</div>
 								</form>
-								<p class="text-center">Not a member? <a href="applicant_registration.php">Sign Up</a></p>
+								<p class="text-center">Not a member? <a href="applicant_registration.php">Sign Up</a>
+								</p>
 							</div>
 						</div>
 					</div>
@@ -111,6 +126,9 @@
 				<div class="row justify-content-center">
 					<div class="col-md-7 col-lg-5">
 						<div class="wrap">
+							<a class="back-button" href="login.php">
+								<img src="assets/img/icons8-back-80.png" class="back-img" alt="">
+							</a>
 							<div class="img">
 								<img src="assets/img/hero-img.png" class="logo" alt="">
 							</div>
@@ -126,12 +144,15 @@
 										<label class="form-control-placeholder" for="username">Username</label>
 									</div>
 									<div class="form-group">
-										<input id="password-field" name='password' type="password" class="form-control" required>
+										<input id="password-field" name='password' type="password" class="form-control"
+											required>
 										<label class="form-control-placeholder" for="password">Password</label>
-										<span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+										<span toggle="#password-field"
+											class="fa fa-fw fa-eye field-icon toggle-password"></span>
 									</div>
 									<div class="form-group">
-										<button type="submit" class="form-control btn btn-primary rounded submit px-3">Sign
+										<button type="submit"
+											class="form-control btn btn-primary rounded submit px-3">Sign
 											In</button>
 									</div>
 									<div class="form-group d-md-flex">

@@ -6,33 +6,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // You can access the query parameter using $_GET['variable']
     $applicantId = $_GET['applicantId'];
 }
-include ('include/get_applicant_info.php');
+include('include/get_applicant_info.php');
 ?>
+
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title></title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
-
-    <!-- Favicons -->
-    <link href="assets/img/hero-img.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-
+    <?php
+    include('assets/include/web_title.php');
+    ?>
+    
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/progress_bar.css" rel="stylesheet">
@@ -181,7 +165,7 @@ include ('include/get_applicant_info.php');
                                                 <h6>Reason To Exit:</h6>
 
                                             </div>
-                                            
+
                                             <div class="work-exp">
                                                 <h6>Company Name: Counterpart Resource Multi-Purpose Cooperative</h6>
                                                 <div style="display: flex;">
@@ -192,7 +176,7 @@ include ('include/get_applicant_info.php');
                                                 <h6>Reason To Exit:</h6>
 
                                             </div>
-                                            
+
 
                                             <!--===== End =====-->
 
@@ -218,13 +202,15 @@ include ('include/get_applicant_info.php');
 
         <div class="container footer-bottom clearfix">
             <div class="copyright">
-                &copy; Copyright <strong><span>Counterpart Resource Multi Purpose Cooperative</span></strong>. All Rights Reserved
+                &copy; Copyright <strong><span>Counterpart Resource Multi Purpose Cooperative</span></strong>. All
+                Rights Reserved
             </div>
         </div>
     </footer><!-- End Footer -->
 
     <div id="preloader"></div>
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/aos/aos.js"></script>

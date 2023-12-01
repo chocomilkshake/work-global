@@ -5,26 +5,10 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title></title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
-
-    <!-- Favicons -->
-    <link href="assets/img/hero-img.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <?php
+    include('assets/include/web_title.php');
+    ?>
+    
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/registraion_applicant.css" rel="stylesheet">
@@ -75,10 +59,13 @@
                                     <!--*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-->
                                     <div id="personalInformation">
                                         <div class="file-upload">
-                                            <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
+                                            <button class="file-upload-btn" type="button"
+                                                onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
 
                                             <div class="image-upload-wrap">
-                                                <input form="bio" class="file-upload-input" id="appPhoto" name="appPhoto" form="bio" type='file' onchange="readURL(this);" accept="image/*" required />
+                                                <input form="bio" class="file-upload-input" id="appPhoto"
+                                                    name="appPhoto" form="bio" type='file' onchange="readURL(this);"
+                                                    accept="image/*" required />
                                                 <div class="drag-text">
                                                     <h3>Drag & Drop your formal photo*.</h3>
                                                 </div>
@@ -86,7 +73,9 @@
                                             <div class="file-upload-content">
                                                 <img class="file-upload-image" src="#" alt="your image" />
                                                 <div class="image-title-wrap">
-                                                    <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+                                                    <button type="button" onclick="removeUpload()"
+                                                        class="remove-image">Remove <span class="image-title">Uploaded
+                                                            Image</span></button>
                                                 </div>
                                             </div>
                                         </div>
@@ -96,7 +85,8 @@
                                             <div class="col-md-6 mb-4">
 
                                                 <div class="form-outline">
-                                                    <input form="bio" type="text" id="firstName" name="firstName" class="form-control form-control-lg" required />
+                                                    <input form="bio" type="text" id="firstName" name="firstName"
+                                                        class="form-control form-control-lg" required />
                                                     <label class="form-label" for="firstName">First Name*</label>
                                                 </div>
 
@@ -104,7 +94,8 @@
                                             <div class="col-md-6 mb-4">
 
                                                 <div class="form-outline">
-                                                    <input form="bio" type="text" id="middleName" name="middleName" class="form-control form-control-lg" />
+                                                    <input form="bio" type="text" id="middleName" name="middleName"
+                                                        class="form-control form-control-lg" />
                                                     <label class="form-label" for="middleName">Middle Name</label>
                                                 </div>
 
@@ -112,7 +103,8 @@
                                             <div class="col-md-6 mb-4">
 
                                                 <div class="form-outline">
-                                                    <input form="bio" type="text" id="lastName" name="lastName" class="form-control form-control-lg" required />
+                                                    <input form="bio" type="text" id="lastName" name="lastName"
+                                                        class="form-control form-control-lg" required />
                                                     <label class="form-label" for="lastName">Last Name*</label>
                                                 </div>
                                             </div>
@@ -120,7 +112,8 @@
                                             <div class="col-md-6 mb-4">
 
                                                 <div class="form-outline">
-                                                    <input form="bio" type="text" id="suffix" name="suffix" class="form-control form-control-lg" />
+                                                    <input form="bio" type="text" id="suffix" name="suffix"
+                                                        class="form-control form-control-lg" />
                                                     <label class="form-label" for="suffix">suffix</label>
                                                 </div>
 
@@ -132,7 +125,8 @@
 
                                             <div class="col-md-6 mb-4">
                                                 <div class="form-outline">
-                                                    <input form="bio" type="text" id="address" name="address" class="form-control form-control-lg" required />
+                                                    <input form="bio" type="text" id="address" name="address"
+                                                        class="form-control form-control-lg" required />
                                                     <label class="form-label" for="address">Address*</label>
                                                 </div>
                                             </div>
@@ -140,7 +134,9 @@
                                             <div class="col-md-6 mb-4 d-flex align-items-center">
 
                                                 <div class="form-outline datepicker w-100">
-                                                    <input form="bio" type="date" class="form-control form-control-lg" id="birthdayDate" name="birthdayDate" onchange="calculateAge()" required />
+                                                    <input form="bio" type="date" class="form-control form-control-lg"
+                                                        id="birthdayDate" name="birthdayDate" onchange="calculateAge()"
+                                                        required />
                                                     <label for="birthdayDate" class="form-label">Birthday*</label>
                                                 </div>
 
@@ -150,17 +146,21 @@
                                                 <h6 class="mb-2 pb-1">Gender: </h6>
 
                                                 <div class="form-check form-check-inline">
-                                                    <input form="bio" class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender" value="Female" checked />
+                                                    <input form="bio" class="form-check-input" type="radio"
+                                                        name="inlineRadioOptions" id="femaleGender" value="Female"
+                                                        checked />
                                                     <label class="form-check-label" for="femaleGender">Female</label>
                                                 </div>
 
                                                 <div class="form-check form-check-inline">
-                                                    <input form="bio" class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender" value="Male" />
+                                                    <input form="bio" class="form-check-input" type="radio"
+                                                        name="inlineRadioOptions" id="maleGender" value="Male" />
                                                     <label class="form-check-label" for="maleGender">Male</label>
                                                 </div>
 
                                                 <div class="form-check form-check-inline">
-                                                    <input form="bio" class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender" value="Other" />
+                                                    <input form="bio" class="form-check-input" type="radio"
+                                                        name="inlineRadioOptions" id="otherGender" value="Other" />
                                                     <label class="form-check-label" for="otherGender">Other</label>
                                                 </div>
 
@@ -171,7 +171,8 @@
 
                                             <div class="col-md-6 mb-4 d-flex align-items-center">
                                                 <div class="form-outline">
-                                                    <input form="bio" type="text" id="age" name="age" class="form-control form-control-lg" readonly />
+                                                    <input form="bio" type="text" id="age" name="age"
+                                                        class="form-control form-control-lg" readonly />
                                                     <label class="form-label" for="age">Age</label>
                                                 </div>
                                             </div>
@@ -181,17 +182,20 @@
                                                 <h6 class="mb-2 pb-1">Civil Status: </h6>
 
                                                 <div class="form-check form-check-inline">
-                                                    <input form="bio" class="form-check-input" type="radio" name="statusRadioOptions" id="single" value="Single" checked />
+                                                    <input form="bio" class="form-check-input" type="radio"
+                                                        name="statusRadioOptions" id="single" value="Single" checked />
                                                     <label class="form-check-label" for="single">Single</label>
                                                 </div>
 
                                                 <div class="form-check form-check-inline">
-                                                    <input form="bio" class="form-check-input" type="radio" name="statusRadioOptions" id="widow" value="Widow" />
+                                                    <input form="bio" class="form-check-input" type="radio"
+                                                        name="statusRadioOptions" id="widow" value="Widow" />
                                                     <label class="form-check-label" for="widow">Widowed</label>
                                                 </div>
 
                                                 <div class="form-check form-check-inline">
-                                                    <input form="bio" class="form-check-input" type="radio" name="statusRadioOptions" id="married" value="Married" />
+                                                    <input form="bio" class="form-check-input" type="radio"
+                                                        name="statusRadioOptions" id="married" value="Married" />
                                                     <label class="form-check-label" for="">Married</label>
                                                 </div>
 
@@ -204,7 +208,8 @@
                                             <div class="col-md-6 mb-4 pb-2">
 
                                                 <div class="form-outline">
-                                                    <input form="bio" type="email" id="emailAddress" name="emailAddress" class="form-control form-control-lg" />
+                                                    <input form="bio" type="email" id="emailAddress" name="emailAddress"
+                                                        class="form-control form-control-lg" />
                                                     <label class="form-label" for="emailAddress">Email*</label>
                                                 </div>
 
@@ -212,7 +217,10 @@
                                             <div class="col-md-6 mb-4 pb-2">
 
                                                 <div class="form-outline">
-                                                    <input form="bio" type="tel" id="phoneNumber" name="phoneNumber" class="form-control form-control-lg" oninput="this.value = this.value.replace(/[^0-9]/g, '');javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="11" required />
+                                                    <input form="bio" type="tel" id="phoneNumber" name="phoneNumber"
+                                                        class="form-control form-control-lg"
+                                                        oninput="this.value = this.value.replace(/[^0-9]/g, '');javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                                        maxlength="11" required />
                                                     <label class="form-label" for="phoneNumber">Phone Number*</label>
                                                 </div>
 
@@ -239,20 +247,25 @@
                                         <div class="row">
                                             <div class="col-md-6 mb-4">
                                                 <div class="form-outline">
-                                                    <input form="bio" type="text" id="primaryName" name="primaryName" class="form-control form-control-lg" />
+                                                    <input form="bio" type="text" id="primaryName" name="primaryName"
+                                                        class="form-control form-control-lg" />
                                                     <label class="form-label" for="primaryName">School Name</label>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 mb-4">
                                                 <div class="form-outline">
-                                                    <input form="bio" type="text" id="primaryAddress" name="primaryAddress" class="form-control form-control-lg" />
+                                                    <input form="bio" type="text" id="primaryAddress"
+                                                        name="primaryAddress" class="form-control form-control-lg" />
                                                     <label class="form-label" for="primaryAddress">Address</label>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-6 mb-4 pb-2">
                                             <div class="form-outline">
-                                                <input form="bio" type="tel" id="primaryEnd" name="primaryEnd" class="form-control form-control-lg" oninput="this.value = this.value.replace(/[^0-9]/g, '');javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="11" />
+                                                <input form="bio" type="tel" id="primaryEnd" name="primaryEnd"
+                                                    class="form-control form-control-lg"
+                                                    oninput="this.value = this.value.replace(/[^0-9]/g, '');javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                                    maxlength="11" />
                                                 <label class="form-label" for="primaryEnd">Year Graduated*</label>
                                             </div>
                                         </div>
@@ -262,20 +275,25 @@
                                         <div class="row">
                                             <div class="col-md-6 mb-4">
                                                 <div class="form-outline">
-                                                    <input form="bio" type="text" id="secondaryName" name="secondaryName" class="form-control form-control-lg" />
+                                                    <input form="bio" type="text" id="secondaryName"
+                                                        name="secondaryName" class="form-control form-control-lg" />
                                                     <label class="form-label" for="secondaryName">School Name</label>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 mb-4">
                                                 <div class="form-outline">
-                                                    <input form="bio" type="text" id="secondaryAddress" name="secondaryAddress" class="form-control form-control-lg" />
+                                                    <input form="bio" type="text" id="secondaryAddress"
+                                                        name="secondaryAddress" class="form-control form-control-lg" />
                                                     <label class="form-label" for="secondaryAddress">Address</label>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-6 mb-4 pb-2">
                                             <div class="form-outline">
-                                                <input form="bio" type="tel" id="secondaryEnd" name="secondaryEnd" class="form-control form-control-lg" oninput="this.value = this.value.replace(/[^0-9]/g, '');javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="11" />
+                                                <input form="bio" type="tel" id="secondaryEnd" name="secondaryEnd"
+                                                    class="form-control form-control-lg"
+                                                    oninput="this.value = this.value.replace(/[^0-9]/g, '');javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                                    maxlength="11" />
                                                 <label class="form-label" for="secondaryEnd">Year Graduated*</label>
                                             </div>
                                         </div>
@@ -284,13 +302,16 @@
                                         <div class="row">
                                             <div class="col-md-6 mb-4">
                                                 <div class="form-outline">
-                                                    <input form="bio" type="text" id="seniorSchool" name="seniorSchool" class="form-control form-control-lg" />
-                                                    <label class="form-label" for="seniorSchool">College/University/School</label>
+                                                    <input form="bio" type="text" id="seniorSchool" name="seniorSchool"
+                                                        class="form-control form-control-lg" />
+                                                    <label class="form-label"
+                                                        for="seniorSchool">College/University/School</label>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 mb-4">
                                                 <div class="form-outline">
-                                                    <input form="bio" type="text" id="seniorAddress" name="seniorAddress" class="form-control form-control-lg" />
+                                                    <input form="bio" type="text" id="seniorAddress"
+                                                        name="seniorAddress" class="form-control form-control-lg" />
                                                     <label class="form-label" for="seniorAddress">Address</label>
                                                 </div>
                                             </div>
@@ -298,13 +319,17 @@
                                         <div class="row">
                                             <div class="col-md-6 mb-4">
                                                 <div class="form-outline">
-                                                    <input form="bio" type="text" id="strand" name="strand" class="form-control form-control-lg" />
+                                                    <input form="bio" type="text" id="strand" name="strand"
+                                                        class="form-control form-control-lg" />
                                                     <label class="form-label" for="course">Strand/Academic Track</label>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 mb-4 pb-2">
                                                 <div class="form-outline">
-                                                    <input form="bio" type="tel" id="seniorEnd" name="seniorEnd" class="form-control form-control-lg" oninput="this.value = this.value.replace(/[^0-9]/g, '');javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="11" />
+                                                    <input form="bio" type="tel" id="seniorEnd" name="seniorEnd"
+                                                        class="form-control form-control-lg"
+                                                        oninput="this.value = this.value.replace(/[^0-9]/g, '');javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                                        maxlength="11" />
                                                     <label class="form-label" for="seniorEnd">Year Graduated*</label>
                                                 </div>
                                             </div>
@@ -316,13 +341,16 @@
                                         <div class="row">
                                             <div class="col-md-6 mb-4">
                                                 <div class="form-outline">
-                                                    <input form="bio" type="text" id="tertiarySchool" name="tertiarySchool" class="form-control form-control-lg" />
-                                                    <label class="form-label" for="tertiarySchool">College/University</label>
+                                                    <input form="bio" type="text" id="tertiarySchool"
+                                                        name="tertiarySchool" class="form-control form-control-lg" />
+                                                    <label class="form-label"
+                                                        for="tertiarySchool">College/University</label>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 mb-4">
                                                 <div class="form-outline">
-                                                    <input form="bio" type="text" id="tertiaryAddress" name="tertiaryAddress" class="form-control form-control-lg" />
+                                                    <input form="bio" type="text" id="tertiaryAddress"
+                                                        name="tertiaryAddress" class="form-control form-control-lg" />
                                                     <label class="form-label" for="tertiaryAddress">Address</label>
                                                 </div>
                                             </div>
@@ -330,13 +358,17 @@
                                         <div class="row">
                                             <div class="col-md-6 mb-4">
                                                 <div class="form-outline">
-                                                    <input form="bio" type="text" id="course" name="course" class="form-control form-control-lg" />
+                                                    <input form="bio" type="text" id="course" name="course"
+                                                        class="form-control form-control-lg" />
                                                     <label class="form-label" for="course">Course/Program</label>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 mb-4 pb-2">
                                                 <div class="form-outline">
-                                                    <input form="bio" type="tel" id="tertiaryEnd" name="tertiaryEnd" class="form-control form-control-lg" oninput="this.value = this.value.replace(/[^0-9]/g, '');javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="11" />
+                                                    <input form="bio" type="tel" id="tertiaryEnd" name="tertiaryEnd"
+                                                        class="form-control form-control-lg"
+                                                        oninput="this.value = this.value.replace(/[^0-9]/g, '');javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                                        maxlength="11" />
                                                     <label class="form-label" for="TertiaryEnd">Year Graduated*</label>
                                                 </div>
                                             </div>
@@ -365,32 +397,38 @@
                                         <div class="row">
                                             <div class="col-md-6 mb-4">
                                                 <div class="form-outline">
-                                                    <input form="bio" type="text" id="position" name="position[]" class="form-control form-control-lg" />
+                                                    <input form="bio" type="text" id="position" name="position[]"
+                                                        class="form-control form-control-lg" />
                                                     <label class="form-label" for="position">Position</label>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 mb-4">
                                                 <div class="form-outline">
-                                                    <input form="bio" type="text" id="companyName" name="companyName[]" class="form-control form-control-lg" />
+                                                    <input form="bio" type="text" id="companyName" name="companyName[]"
+                                                        class="form-control form-control-lg" />
                                                     <label class="form-label" for="companyName">Company Name</label>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 mb-4">
                                                 <div class="form-outline">
-                                                    <input form="bio" type="text" id="companyAddress" name="companyAddress[]" class="form-control form-control-lg" />
-                                                    <label class="form-label" for="companyAddress">Company Address</label>
+                                                    <input form="bio" type="text" id="companyAddress"
+                                                        name="companyAddress[]" class="form-control form-control-lg" />
+                                                    <label class="form-label" for="companyAddress">Company
+                                                        Address</label>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 mb-4">
                                                 <div class="form-outline">
-                                                    <input form="bio" type="text" id="year" name="year[]" class="form-control form-control-lg" />
+                                                    <input form="bio" type="text" id="year" name="year[]"
+                                                        class="form-control form-control-lg" />
                                                     <label class="form-label" for="year">Year</label>
                                                 </div>
                                             </div>
                                             <br>
                                             <div class="form-outline">
                                                 <label class="form-label" for="aboutExp">About Work Experience</label>
-                                                <textarea form="bio" name="aboutExp[]" name="aboutExp" cols="60" rows="5" class="form-control form-control-lg"></textarea>
+                                                <textarea form="bio" name="aboutExp[]" name="aboutExp" cols="60"
+                                                    rows="5" class="form-control form-control-lg"></textarea>
                                             </div>
                                         </div>
                                         <br>
@@ -400,32 +438,38 @@
                                         <div class="row">
                                             <div class="col-md-6 mb-4">
                                                 <div class="form-outline">
-                                                    <input form="bio" type="text" id="position" name="position[]" class="form-control form-control-lg" />
+                                                    <input form="bio" type="text" id="position" name="position[]"
+                                                        class="form-control form-control-lg" />
                                                     <label class="form-label" for="position">Position</label>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 mb-4">
                                                 <div class="form-outline">
-                                                    <input form="bio" type="text" id="companyName" name="companyName[]" class="form-control form-control-lg" />
+                                                    <input form="bio" type="text" id="companyName" name="companyName[]"
+                                                        class="form-control form-control-lg" />
                                                     <label class="form-label" for="companyName">Company Name</label>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 mb-4">
                                                 <div class="form-outline">
-                                                    <input form="bio" type="text" id="companyAddress" name="companyAddress[]" class="form-control form-control-lg" />
-                                                    <label class="form-label" for="companyAddress">Company Address</label>
+                                                    <input form="bio" type="text" id="companyAddress"
+                                                        name="companyAddress[]" class="form-control form-control-lg" />
+                                                    <label class="form-label" for="companyAddress">Company
+                                                        Address</label>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 mb-4">
                                                 <div class="form-outline">
-                                                    <input form="bio" type="text" id="year" name="year[]" class="form-control form-control-lg" />
+                                                    <input form="bio" type="text" id="year" name="year[]"
+                                                        class="form-control form-control-lg" />
                                                     <label class="form-label" for="year">Year</label>
                                                 </div>
                                             </div>
                                             <br>
                                             <div class="form-outline">
                                                 <label class="form-label" for="aboutExp">About Work Experience</label>
-                                                <textarea form="bio" name="aboutExp[]" name="aboutExp" cols="60" rows="5" class="form-control form-control-lg"></textarea>
+                                                <textarea form="bio" name="aboutExp[]" name="aboutExp" cols="60"
+                                                    rows="5" class="form-control form-control-lg"></textarea>
                                             </div>
 
                                             <br>
@@ -435,32 +479,40 @@
                                             <div class="row">
                                                 <div class="col-md-6 mb-4">
                                                     <div class="form-outline">
-                                                        <input form="bio" type="text" id="position" name="position[]" class="form-control form-control-lg" />
+                                                        <input form="bio" type="text" id="position" name="position[]"
+                                                            class="form-control form-control-lg" />
                                                         <label class="form-label" for="position">Position</label>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6 mb-4">
                                                     <div class="form-outline">
-                                                        <input form="bio" type="text" id="companyName" name="companyName[]" class="form-control form-control-lg" />
+                                                        <input form="bio" type="text" id="companyName"
+                                                            name="companyName[]" class="form-control form-control-lg" />
                                                         <label class="form-label" for="companyName">Company Name</label>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6 mb-4">
                                                     <div class="form-outline">
-                                                        <input form="bio" type="text" id="companyAddress" name="companyAddress[]" class="form-control form-control-lg" />
-                                                        <label class="form-label" for="companyAddress">Company Address</label>
+                                                        <input form="bio" type="text" id="companyAddress"
+                                                            name="companyAddress[]"
+                                                            class="form-control form-control-lg" />
+                                                        <label class="form-label" for="companyAddress">Company
+                                                            Address</label>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6 mb-4">
                                                     <div class="form-outline">
-                                                        <input type="text" id="year" name="year[]" class="form-control form-control-lg" />
+                                                        <input type="text" id="year" name="year[]"
+                                                            class="form-control form-control-lg" />
                                                         <label form="bio" class="form-label" for="year">Year</label>
                                                     </div>
                                                 </div>
                                                 <br>
                                                 <div class="form-outline">
-                                                    <label class="form-label" for="aboutExp">About Work Experience</label>
-                                                    <textarea form="bio" name="aboutExp[]" name="aboutExp" cols="60" rows="5" class="form-control form-control-lg"></textarea>
+                                                    <label class="form-label" for="aboutExp">About Work
+                                                        Experience</label>
+                                                    <textarea form="bio" name="aboutExp[]" name="aboutExp" cols="60"
+                                                        rows="5" class="form-control form-control-lg"></textarea>
                                                 </div>
 
 
@@ -490,33 +542,41 @@
                                     <div id="account" style="display: none;">
 
                                         <div class="form-outline">
-                                            <input form="bio" type="text" id="username" name="username" class="form-control form-control-lg" minlength="8" required />
+                                            <input form="bio" type="text" id="username" name="username"
+                                                class="form-control form-control-lg" minlength="8" required />
                                             <label class="form-label" for="username">Username</label>
                                             <div id="username-feedback"></div>
                                         </div>
                                         <br>
                                         <div class="form-outline">
-                                            <input form="bio" type="password" id="password" name="password" class="form-control form-control-lg" minlength="8" required />
+                                            <input form="bio" type="password" id="password" name="password"
+                                                class="form-control form-control-lg" minlength="8" required />
                                             <label class="form-label" for="password">Password</label>
                                         </div>
                                         <br>
                                         <div class="form-outline">
-                                            <input form="bio" type="password" id="confirmPassword" name="confirmPassword" oninput="checkPasswordMatch(this)" class="form-control form-control-lg" minlength="8" required />
+                                            <input form="bio" type="password" id="confirmPassword"
+                                                name="confirmPassword" oninput="checkPasswordMatch(this)"
+                                                class="form-control form-control-lg" minlength="8" required />
                                             <label class="form-label" for="confirmPassword">Confirm Password</label>
                                         </div>
                                         <br>
                                         <br>
                                         <div class="form-outline">
-                                            <input type="checkbox" name="term" id="term"><a href="privacy.php"> Term and Condition</a>
+                                            <input type="checkbox" name="term" id="term"><a href="privacy.php"> Term and
+                                                Condition</a>
                                             <br>
-                                            <input type="checkbox" name="privay" id="privacy"><a href="privacy.php"> Privacy policies</a>
+                                            <input type="checkbox" name="privay" id="privacy"><a href="privacy.php">
+                                                Privacy policies</a>
                                         </div>
 
 
 
-                                        <form id="bio" action="assets/process/create_account_bio.php" method="post" enctype="multipart/form-data">
+                                        <form id="bio" action="assets/process/create_account_bio.php" method="post"
+                                            enctype="multipart/form-data">
                                             <div class="mt-4 pt-2">
-                                                <input class="btn btn-primary btn-lg" id="send" name="send" type="submit" value="Submit" disabled />
+                                                <input class="btn btn-primary btn-lg" id="send" name="send"
+                                                    type="submit" value="Submit" disabled />
                                             </div>
                                         </form>
 
@@ -592,13 +652,15 @@
 
         <div class="container footer-bottom clearfix">
             <div class="copyright">
-                &copy; Copyright <strong><span>Counterpart Resource Multi Purpose Cooperative</span></strong>. All Rights Reserved
+                &copy; Copyright <strong><span>Counterpart Resource Multi Purpose Cooperative</span></strong>. All
+                Rights Reserved
             </div>
         </div>
     </footer><!-- End Footer -->
 
     <div id="preloader"></div>
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/aos/aos.js"></script>

@@ -2,7 +2,14 @@
 <html lang="en">
 
 <head>
-	<title>Login</title>
+	<?php
+	$currentScript = $_SERVER['PHP_SELF'];
+	$scriptName = basename($currentScript, '.php');
+	$scriptNameWithSpaces = str_replace('_', ' ', $scriptName);
+	?>
+	<title>
+		<?php echo $scriptNameWithSpaces; ?>
+	</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 

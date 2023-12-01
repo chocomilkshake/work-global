@@ -10,8 +10,9 @@ include('assets/include/get_employer_info.php');
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Home</title>
+  <?php
+  include('assets/include/web_title.php');
+  ?>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -20,7 +21,9 @@ include('assets/include/get_employer_info.php');
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -51,9 +54,9 @@ include('assets/include/get_employer_info.php');
 <body>
 
   <!-- ======= Header ======= -->
-  
-  <?php include('employer_header.php');?>
-  
+
+  <?php include('employer_header.php'); ?>
+
   <!-- End Header -->
 
   <main id="main">
@@ -98,26 +101,38 @@ include('assets/include/get_employer_info.php');
             <div>
 
               <h5>representative</h5>
-              <p><?php echo $representative; ?></p>
+              <p>
+                <?php echo $representative; ?>
+              </p>
               <br>
               <h5>Company Register Number</h5>
-              <p><?php echo $companyregNum; ?></p>
+              <p>
+                <?php echo $companyregNum; ?>
+              </p>
               <br>
               <h5>Company Size</h5>
-              <p><?php echo $companySize; ?></p>
+              <p>
+                <?php echo $companySize; ?>
+              </p>
               <br>
             </div>
 
             <div>
 
               <h5>contact</h5>
-              <p><?php echo $companyContact; ?></p>
+              <p>
+                <?php echo $companyContact; ?>
+              </p>
               <br>
               <h5>Email</h5>
-              <p><?php echo $companyEmail; ?></p>
+              <p>
+                <?php echo $companyEmail; ?>
+              </p>
               <br>
               <h5>Website</h5>
-              <p><?php echo $companyWebsite; ?></p>
+              <p>
+                <?php echo $companyWebsite; ?>
+              </p>
               <br>
             </div>
           </div>
@@ -135,7 +150,9 @@ include('assets/include/get_employer_info.php');
 
           <div class="section-title">
             <h2>Job offer</h2>
-            <p>Right person for the right job. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <p>Right person for the right job. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+              consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+              sit in iste officiis commodi quidem hic quas.</p>
           </div>
 
           <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
@@ -169,7 +186,8 @@ include('assets/include/get_employer_info.php');
   </footer><!-- End Footer -->
 
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
